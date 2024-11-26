@@ -4,10 +4,8 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using Bookify.Domain.Abstraction;
-using Bookify.Domain.Apartments;
 using Bookify.Domain.Bookings;
 using Bookify.Domain.Reviews.Events;
-using Bookify.Domain.Users;
 
 namespace Bookify.Domain.Reviews
 {
@@ -42,7 +40,6 @@ namespace Bookify.Domain.Reviews
             Guid id,
             Comment comment,
             Booking booking,
-            User user,
             Rating rating,
             DateTime createdOnUtc)
         {
@@ -56,7 +53,7 @@ namespace Bookify.Domain.Reviews
                 comment,
                 booking.ApartmentId,
                 booking.Id,
-                user.Id,
+                booking.UserId,
                 rating,
                 createdOnUtc);
 
