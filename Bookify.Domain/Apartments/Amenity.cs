@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace Bookify.Domain.Apartments
 {
-    internal enum Amenity
+    public enum Amenity
     {
         Wifi = 1,
         AirConditioning = 2,

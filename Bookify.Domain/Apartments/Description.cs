@@ -6,5 +6,5 @@ using System.Threading.Tasks;
 
 namespace Bookify.Domain.Apartments
 {
-    internal record Description(string Value);
+    public record Description(string Value);
 }
